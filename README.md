@@ -1,6 +1,6 @@
 # cse210-student-template
 
-Abigail L. Bado
+Abigail Limpiado Bado
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
