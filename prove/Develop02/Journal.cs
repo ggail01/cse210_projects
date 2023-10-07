@@ -3,7 +3,11 @@ using System.Diagnostics.Contracts;
 
 class Journal
 {
-    private List<Entry> _entries = new List<Entry>();
+    public List<Entry> _entries = new List<Entry>();
+
+    public Journal()
+    {
+    }
 
     private List<string> _prompts = new List<string>()
     {
