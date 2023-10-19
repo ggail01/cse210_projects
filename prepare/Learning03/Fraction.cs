@@ -28,4 +28,9 @@ public class Fraction
         string _fraction = $"{_top}/{_bottom}";
         return _fraction;
     }
+
+    public double GetValue()
+    {
+        return (double)_top / (double)_bottom;
+    }
 }
