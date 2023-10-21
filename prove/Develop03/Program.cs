@@ -20,11 +20,11 @@ public class Program
                 break;
             }
 
-            int wordsToHide = 3;
+            int wordsToHide = 4;
             scripture.HideWords(wordsToHide);
             Console.Clear();
             Console.WriteLine($"{scripture.GetRenderedText()}");
         }
-        Console.WriteLine("Program finished! Thank you.");
+        Console.WriteLine("The Program is finished! Thank you.");
     }
 }
