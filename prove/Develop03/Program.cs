@@ -5,12 +5,11 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Reference reference = new Reference("John", 3, 16);
-        string scriptures = "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.";
-
+        Reference reference = new Reference("Mosiah", 2, 17);
+        string scriptures = "And behold, I tell you these things that ye may learn wisdom; that ye may learn that when ye are in the service of your fellow beings ye are only in the service of your God.";
         Scripture scripture = new Scripture(reference, scriptures);
 
-        Console.WriteLine($"\n{reference.GetRenderedText()} {scriptures}");
+        Console.WriteLine($"\n{reference.GetRenderedText()} - {scriptures}");
 
         while (!scripture.IsCompletelyHidden())
         {
@@ -22,10 +21,10 @@ public class Program
                 break;
             }
 
-            scripture.HideWords(5);
+            scripture.HideWords(4);
             Console.Clear();
             Console.WriteLine($"{scripture.GetRenderedText()}");
         }
-        Console.WriteLine("Program finished! Thank you");
+        Console.WriteLine("Program finished! Thank you.");
     }
 }

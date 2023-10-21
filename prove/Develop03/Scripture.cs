@@ -16,6 +16,7 @@ public class Scripture
     {
         Random random = new Random();
         List<Word> _wordsToHide = new List<Word>();
+
         foreach (Word word in _words)
         {
             if(!word.IsHidden())
@@ -35,6 +36,7 @@ public class Scripture
     public string GetRenderedText()
     {
         List<string> _displayText = new List<string>();
+
         string renderedText = _reference.GetRenderedText();
         foreach (Word word in _words)
         {
