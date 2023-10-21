@@ -11,10 +11,11 @@ public class Program
 
         Console.WriteLine($"\n{reference.GetRenderedText()} - {scriptures}\n");
 
-        while (!scripture.IsCompletelyHidden())
+        while (scripture.IsCompletelyHidden() == false)
         {
             Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-            string input = Console.ReadLine().ToLower();
+            string input = Console.ReadLine();
+
             if (input == "quit")
             {
                 break;
@@ -22,6 +23,7 @@ public class Program
 
             int wordsToHide = 4;
             scripture.HideWords(wordsToHide);
+
             Console.Clear();
             Console.WriteLine($"{scripture.GetRenderedText()}");
         }
