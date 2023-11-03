@@ -6,7 +6,7 @@ public class ListingActivity : Activity
     private List<string> _listItems = new List<string>();
 
     public ListingActivity()
-        : base("Listing Activity", "This activity will help you reflect on positive aspects of your life.")
+        : base("Listing Activity", "This activity will help you reflect on positive aspects of your life by listing them.")
     {
     }
 
