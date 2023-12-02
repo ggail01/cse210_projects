@@ -11,6 +11,7 @@ public class Customer
         _address = address;
     }
 
+    // Getters
     public string GetName()
     {
         return _name;
@@ -21,8 +22,8 @@ public class Customer
         return _address;
     }
 
-    public bool IsInUSA()
+    public bool IsInUSACustomer()
     {
-        return _address.IsInUSA();
+        return _address.IsInUSAddress();
     }
 }

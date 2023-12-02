@@ -16,7 +16,7 @@ public class Order
         _products.Add(product);
     }
 
-    public double GetTotalPrice()
+    public double CalculateTotalCosts()
     {
         double totalPrice = 0.00;
         foreach (Product product in _products)
@@ -25,7 +25,7 @@ public class Order
         }
 
         // Adding shipping cost based on customer location
-        if (_customer.IsInUSA())
+        if (_customer.IsInUSACustomer())
         {
             totalPrice += 5.00;
         }

@@ -15,6 +15,7 @@ public class Product
         _quantity = quantity;
     }
 
+    // Getters
     public string GetName()
     {
         return _name;

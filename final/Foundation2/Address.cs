@@ -15,7 +15,7 @@ public class Address
         _country = country;
     }
 
-    public bool IsInUSA()
+    public bool IsInUSAddress()
     {
         return _country.Equals("USA", StringComparison.OrdinalIgnoreCase);
     }
