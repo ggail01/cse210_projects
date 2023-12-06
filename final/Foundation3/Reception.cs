@@ -10,8 +10,8 @@ public class Reception : Event
         _rsvpEmail = rsvpEmail;
     }
 
-    public override string GetFullDetails()
+    public string GetFullDetails()
     {
-        return $"{base.GetFullDetails()}\nType: Reception\nRSVP Email: {_rsvpEmail}";
+        return $"{base.GetStandardDetails()}\nType: Reception\nRSVP Email: {_rsvpEmail}";
     }
 }

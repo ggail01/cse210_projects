@@ -17,17 +17,12 @@ public abstract class Event
         _address = address;
     }
 
-    public virtual string GetStandardDetails()
+    public string GetStandardDetails()
     {
-        return $"Title: {_title}\nDescription: {_description}\nDate: {_date.ToShortDateString()}\nTime: {_time}\nAddress: {_address}";
+        return $"Title: {_title}\nDescription: {_description}\nDate: {_date.ToShortDateString()}\nTime: {_time}\nAddress: {_address.GetAddress()}";
     }
 
-    public virtual string GetFullDetails()
-    {
-        return GetStandardDetails();
-    }
-
-    public virtual string GetShortDescription()
+    public string GetShortDescription()
     {
         return $"Type: {GetType().Name}\nTitle: {_title}\nDate: {_date.ToShortDateString()}";
     }

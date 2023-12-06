@@ -15,17 +15,7 @@ public class Address
         _zipCode = zipCode;
     }
 
-    public string GetStreet()
-    {
-        return _street;
-    }
-
-    public string GetCity()
-    {
-        return _city;
-    }
-
-    public override string ToString()
+    public string GetAddress()
     {
         return $"{_street}, {_city}, {_state}, {_zipCode}";
     }
