@@ -1,12 +1,12 @@
 using System;
 
-public abstract class Event
+public class Event
 {
-    protected string _title;
-    protected string _description;
-    protected DateTime _date;
-    protected TimeSpan _time;
-    protected Address _address;
+    private string _title;
+    private string _description;
+    private DateTime _date;
+    private TimeSpan _time;
+    private Address _address;
 
     public Event(string title, string description, DateTime date, TimeSpan time, Address address)
     {
