@@ -17,7 +17,7 @@ class Program
 
         Console.WriteLine();
         Console.WriteLine("-- Standard Details --\n");
-        Console.WriteLine(outdoorGathering.GetStandardDetails());
+        Console.WriteLine(reception.GetStandardDetails());
         Console.WriteLine("\n");
 
         Console.WriteLine("-- Full Details --\n");
