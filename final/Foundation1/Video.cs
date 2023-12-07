@@ -2,10 +2,10 @@ using System;
 
 public class Video
 {
-    private string _title;
-    private string _author;
-    private int _length;
-    private List<Comment> _comments;
+    public string _title;
+    public string _author;
+    public int _length;
+    public List<Comment> _comments;
 
     public Video(string title, string author, int length)
     {
@@ -26,19 +26,15 @@ public class Video
         return _comments.Count;
     }
 
-    public string DisplayVideoInfo()
+    public void DisplayVideoInfo()
     {
-        string videoInfo = $"\nTitle: {_title}\nAuthor: {_author}\nLength (seconds): {_length}\nNumber of Comments: {GetNumberOfComments()}\n\n";
+        Console.WriteLine($"\nTitle: {_title}\nAuthor: {_author}\nLength (seconds): {_length}\nNumber of Comments: {GetNumberOfComments()}\n");
 
-        if (GetNumberOfComments() > 0)
+        Console.WriteLine("Comments:");
+        foreach (var comment in _comments)
         {
-            videoInfo += "Comments:\n";
-            foreach (var comment in _comments)
-            {
-                videoInfo += $"{comment.GetCommentInfo()}\n";
-            }
+            comment.GetCommentInfo();
         }
-
-        return videoInfo;
+        Console.WriteLine();
     }
 }

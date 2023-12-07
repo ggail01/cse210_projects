@@ -2,8 +2,8 @@ using System;
 
 public class Comment
 {
-    private string _name;
-    private string _text;
+    public string _name;
+    public string _text;
 
     public Comment(string name, string text)
     {
@@ -12,8 +12,8 @@ public class Comment
     }
 
 
-    public string GetCommentInfo()
+    public void GetCommentInfo()
     {
-        return $"@{_name} --- {_text}";
+        Console.WriteLine($"@{_name} --- {_text}");
     }
 }

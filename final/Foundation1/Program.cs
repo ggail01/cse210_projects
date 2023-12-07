@@ -17,7 +17,7 @@ class Program
         Video video2 = new Video("Knitting for Beginners", "Hobby Lobby", 840);
         video2.AddComment("Letecia Coral", "Your knitting tutorials are a lifesaver for beginners like me.");
         video2.AddComment("Paula Jean P.", "Your explanations are clear, and the close-ups help a lot.");
-        video2.AddComment("Tyzmaine Aguilar", "I've always wanted to learn how to knit, and your video made it so much less intimidating.");
+        video2.AddComment("Tyzmaine A.", "I've always wanted to learn how to knit, and your video made it so much less intimidating.");
         video2.AddComment("Mylene M.", "The beginner-friendly projects are exactly what I needed.");
 
         Video video3 = new Video("Business Look Makeup Tutorial", "Alexa Chung", 480);
@@ -33,8 +33,7 @@ class Program
         // Displaying video information
         foreach (var video in videos)
         {
-            Console.WriteLine(video.DisplayVideoInfo());
-            Console.WriteLine();
+            video.DisplayVideoInfo();
         }
     }
 }
