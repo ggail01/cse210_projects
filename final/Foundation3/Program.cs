@@ -29,7 +29,7 @@ class Program
         Console.WriteLine("\n-- Standard Details --");
         Console.WriteLine(reception.GetStandardDetails());
         Console.WriteLine("\n-- Full Details --");
-        Console.WriteLine(lecture.GetFullDetails());
+        Console.WriteLine(reception.GetFullDetails());
         Console.WriteLine("\n-- Short Description --");
         Console.WriteLine(reception.GetShortDescription());
         Console.WriteLine("\n");
