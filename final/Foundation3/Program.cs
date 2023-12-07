@@ -14,17 +14,32 @@ class Program
         Reception reception = new Reception("Grand Reception", "An elegant reception for everyone", DateTime.Now.AddDays(14), new TimeSpan(18, 30, 0), address2, "rsvp@example.com");
         OutdoorGathering outdoorGathering = new OutdoorGathering("Summer Picnic", "Enjoy a day outdoors with friends", DateTime.Now.AddDays(21), new TimeSpan(12, 0, 0), address3, "Sunny with a high of 25°C");
 
-
+        // Display Marketing Messages
         Console.WriteLine();
-        Console.WriteLine("-- Standard Details --\n");
-        Console.WriteLine(reception.GetStandardDetails());
-        Console.WriteLine("\n");
-
-        Console.WriteLine("-- Full Details --\n");
+        Console.WriteLine("Lecture Marketing Messages:");
+        Console.WriteLine("\n-- Standard Details --");
+        Console.WriteLine(lecture.GetStandardDetails());
+        Console.WriteLine("\n-- Full Details --");
         Console.WriteLine(lecture.GetFullDetails());
+        Console.WriteLine("\n-- Short Description --");
+        Console.WriteLine(lecture.GetShortDescription());
         Console.WriteLine("\n");
 
-        Console.WriteLine("-- Short Description --\n");
+        Console.WriteLine("Reception Marketing Messages:");
+        Console.WriteLine("\n-- Standard Details --");
+        Console.WriteLine(reception.GetStandardDetails());
+        Console.WriteLine("\n-- Full Details --");
+        Console.WriteLine(lecture.GetFullDetails());
+        Console.WriteLine("\n-- Short Description --");
+        Console.WriteLine(reception.GetShortDescription());
+        Console.WriteLine("\n");
+
+        Console.WriteLine("Outdoor Gathering Marketing Messages:");
+        Console.WriteLine("\n-- Standard Details --");
+        Console.WriteLine(outdoorGathering.GetStandardDetails());
+        Console.WriteLine("\n-- Full Details --");
+        Console.WriteLine(outdoorGathering.GetFullDetails());
+        Console.WriteLine("\n-- Short Description --");
         Console.WriteLine(outdoorGathering.GetShortDescription());
         Console.WriteLine();
     }
