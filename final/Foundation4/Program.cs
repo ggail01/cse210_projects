@@ -13,6 +13,8 @@ class Program
             new Swimming(new DateTime(2023, 12, 22), 30, 10)
         };
 
+        Console.WriteLine("\n-----  LIST OF ACTIVITIES  -----");
+
         foreach (var activity in activities)
         {
             Console.WriteLine(activity.GetSummary());
